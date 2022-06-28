@@ -1,0 +1,19 @@
+---
+title: "mlbmarkdown"
+author: "Nathan Rothschild"
+date: '2022-06-28'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(primer.data)
+library(readxl)
+library(rvest)
+```
+
+```{r excel}
+read_xls(path = "sportsref_download.xls")
+```
+
